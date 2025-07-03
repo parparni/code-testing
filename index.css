@@ -220,8 +220,8 @@ small {
 
     div#logo-container strong {
         font-size: x-large;
-        font-weight: 500;
-        text-shadow: 1pt .5pt 0 rgba(152, 152, 152, 0.298);
+        font-weight: bold;
+        text-shadow:  2pt 1pt 0 rgba(152, 152, 152, 0.298);
         letter-spacing: .1pt;
     }
 
