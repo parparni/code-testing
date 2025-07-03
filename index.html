@@ -14,16 +14,17 @@
     <div class="container">
         <form action="" method="post">
             <label for="email"><b>Email:</b></label>
-            <input type="email" name="email" id="email" placeholder="name@domain.com">
+            <input type="email" name="email" id="email" placeholder="name@domain.com" autofocus>
             <label for="password"><b>Password:</b></label>
-            <input type="password" name="password" id="password" placeholder="kmv**********bvs$#&">
+            <input type="password" name="password" id="password" placeholder="kmv**********bvs$#&" autofocus>
             <div class="show-psswrd"><input type="checkbox" name="" id=""> <span>Show Password</span></div>
             <div class="auth-divider"><b>Or</b></div>
             <div class="auth-google"><a href="">Continue with Google</a></div>
             <button type="submit">Log In</button>
-            <div class="terms-container"><input type="checkbox" checked="checked" name="" id=""> By signing in
+            <div class="terms-container">
+                <input type="checkbox" checked="checked" name="" id=""> <span>By signing in
                 you consent to our <strong><a href="">Terms</a> </strong> and
-                <strong> <a href="">Policies</a> </strong>
+                <strong> <a href="">Policies</a> </strong></span>
             </div>
             <small>Copyright &copy; Dharvak.inc</small>
         </form>
