@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-color: rgba(241, 242, 241, 0.331);
+    background-color: white;
     position: relative;
     width: 100%;
 }
@@ -86,7 +86,7 @@ label {
 div.auth-google {
     width: 100%;
     background: rgb(255, 249, 239);
-    box-shadow: 0 0 3pt 0 rgba(128, 128, 128, 0.957);
+    box-shadow: 0 0 3pt 0 rgba(128, 128, 128, 0.534);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     padding: 8pt 3pt;
@@ -103,12 +103,6 @@ div.auth-google a {
     opacity: 0.8;
 }
 
-input[type=chekbox]:focus,
-input[type=chekbox]:hover,
-input[type=chekbox] {
-    outline: none;
-}
-
 div.auth-google:hover {
     box-shadow: 0 0 5pt 0 rgba(127, 127, 127, 0.787);
 }
@@ -120,9 +114,12 @@ div.auth-google {
 }
 
 input:hover {
-    outline: 2pt solid rgb(217, 144, 7);
+    border:  2pt solid rgb(200, 130, 0);
 }
-
+input::placeholder{
+    color: rgb(101, 101, 101);
+    
+}
 button {
     padding: 10pt;
     border-radius: 5pt;
@@ -164,6 +161,8 @@ div.auth-divider::after {
 
 div.terms-container {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2rem;
     font-family: Arial, Helvetica, sans-serif;
