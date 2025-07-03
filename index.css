@@ -160,7 +160,7 @@ div.auth-divider::after {
     flex: 1;
     background: rgba(154, 154, 154, 0.794);
     padding: .3pt;
-    margin: 5ps
+    margin: 15pt
 }
 
 div.terms-container {
