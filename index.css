@@ -118,7 +118,7 @@ input:hover {
     border:  2pt solid rgb(200, 130, 0);
 }
 input::placeholder{
-    color: rgb(101, 101, 101);
+    color: rgb(156, 156, 156)
     
 }
 button {
