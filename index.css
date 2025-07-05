@@ -44,8 +44,8 @@ div#logo-container strong span.a {
     color: rgb(200, 130, 0);
 }
 div.container{
-    background-color: white;
-    background: white;
+    background-color: transparent;
+    background:transparent;
 }
 
 
