@@ -3,9 +3,13 @@
 *::after {
     box-sizing: border-box;
 }
+html{
+background-color: white;
+    background: white
 
 body {
     margin: 0;
+    background-color: white;
     background-color: white;
     position: relative;
     width: 100%;
@@ -38,6 +42,10 @@ div#logo-container strong span.d {
 
 div#logo-container strong span.a {
     color: rgb(200, 130, 0);
+}
+div.container{
+    background-color: white;
+    background: white;
 }
 
 
