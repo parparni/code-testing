@@ -44,8 +44,8 @@ div#logo-container strong span.a {
     color: rgb(200, 130, 0);
 }
 div.container{
-    background-color: transparent;
-    background:transparent;
+    background-color: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
+    background: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
 }
 
 
@@ -235,7 +235,8 @@ small {
         text-shadow:  2pt 1pt 0 rgba(152, 152, 152, 0.298);
         letter-spacing: .1pt;
     }
-
+ background-color: transparent;
+    background:transparent  ;
     form {
         width: 100%;
         background-color: transparent;
