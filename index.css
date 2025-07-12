@@ -64,7 +64,7 @@ input {
     display: block;
     padding: 10pt;
     border: 2pt solid rgb(211, 211, 211);
-    border-radius: 5pt;
+    border-radius: 3pt;
     margin-bottom: 5pt;
     transition: all 10ms ease;
     cursor: text;
@@ -126,7 +126,7 @@ input::placeholder{
 }
 button {
     padding: 10pt;
-    border-radius: 5pt;
+    border-radius: 50rem;
     width: 100%;
     margin-top: 3rem;
     background-color: green;
@@ -249,8 +249,8 @@ small {
 
     input {
         box-shadow: none;
-        padding: 10pt;
-        border: 1pt solid rgb(211, 211, 211);
+        padding: 12pt;
+     
     }
 
     input:focus {
