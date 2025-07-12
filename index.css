@@ -253,12 +253,5 @@ small {
      
     }
 
-    input:focus {
-        border: 1pt solid rgb(172, 115, 9);
-        outline: none;
-    }
 
-    input:hover {
-        outline: 1pt solid rgb(217, 144, 7);
-    }
 }
