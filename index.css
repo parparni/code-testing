@@ -10,8 +10,8 @@ html{
 
 body {
     margin: 0;
-   background-color: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
-    background: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
+   background-color: #FFFFF7;
+    background: #FFFFF7;
     position: relative;
     width: 100%;
 }
