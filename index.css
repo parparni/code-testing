@@ -50,7 +50,6 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: ;
     background-color: white;
     padding: 30pt 15pt;
     box-shadow: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
