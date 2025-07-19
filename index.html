@@ -31,6 +31,16 @@
     </div>
 
     <footer></footer>
-    <script src="./index.js"> </script> 
+    <script>
+        function position() {
+            var input = document.querySelector("input");
+            var button = document.querySelector("#button");
+            for (var i = 0; i <input.length; i++) {
+                input.addEventListener("click", ()=> {
+                    button.classList.toggle("position")
+                })
+            }
+        }
+    </script> 
 
 </html>
