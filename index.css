@@ -123,6 +123,8 @@ input:hover {
 input::placeholder{
     color: rgb(156, 156, 156)
     
+} input[type=checkbox]{
+    background-color: orange
 }
 button {
     padding: 10pt;
