@@ -76,7 +76,7 @@ input {
 
 input:focus {
     outline: none;
-    border: 2pt solid rgb(200, 130, 0);
+    border: 2pt solid green;
     box-shadow: none;
 }
 
