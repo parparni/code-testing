@@ -69,7 +69,7 @@ input {
     transition: all 10ms ease;
     cursor: text;
     outline: none;
-    background: white;
+    background: transparent;
     font-size: 17px
 }
 
@@ -262,6 +262,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
