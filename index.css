@@ -75,7 +75,7 @@ input {
 
 input:focus {
     outline: none;
-    border: 2pt solid rgb(200, 130, 0);
+    border: 1pt solid rgb(200, 130, 0);
     box-shadow: none;
     background-color: white
 }
@@ -262,6 +262,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
