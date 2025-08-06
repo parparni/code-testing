@@ -63,7 +63,7 @@ form {
 input {
     display: block;
     padding: 10pt;
-    border: 2pt solid rgb(211, 211, 211);
+    border: 1.5pt solid rgb(211, 211, 211);
     border-radius: 3pt;
     margin-bottom: 5pt;
     transition: all 10ms ease;
@@ -263,4 +263,5 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
