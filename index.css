@@ -153,7 +153,7 @@ div.auth-divider {
     margin-top: 1rem;
     color: rgba(154, 154, 154, 0.794);
      font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: medium;
 }
 
@@ -163,7 +163,7 @@ div.auth-divider::after {
     flex: 1;
     background: rgba(154, 154, 154, 0.794);
     padding: .3pt;
-    margin: 15pt
+    margin: 7pt
 }
 
 div.terms-container {
@@ -260,6 +260,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
