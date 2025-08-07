@@ -64,7 +64,7 @@ input {
     display: block;
     padding: 10pt;
     border: 1.5pt solid rgb(211, 211, 211);
-    border-radius: 3pt;
+    border-radius: 5pt;
     margin-bottom: 5pt;
     transition: all 10ms ease;
     cursor: text;
@@ -260,6 +260,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
