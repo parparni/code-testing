@@ -117,14 +117,12 @@ div.auth-google {
     cursor: pointer;
 }
 
-input:hover {
-    border:  1.5pt solid rgb(200, 130, 0);
-}
 input::placeholder{
     color: rgb(156, 156, 156)
     
 } input[type=checkbox]{
-    background-color: orange
+    appearance: none;
+    background-color: transparent
 }
 button {
     padding: 10pt;
@@ -262,6 +260,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
