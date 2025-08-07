@@ -63,7 +63,7 @@ form {
 input {
     display: block;
     padding: 10pt;
-    border: 1pt solid rgb(211, 211, 211);
+    border: 1.5pt solid rgb(211, 211, 211);
     border-radius: 3pt;
     margin-bottom: 5pt;
     transition: all 10ms ease;
@@ -75,7 +75,7 @@ input {
 
 input:focus {
     outline: none;
-    border: 1pt solid rgb(200, 130, 0);
+    border: 1.5pt solid rgb(200, 130, 0);
     box-shadow: none;
     background-color: white
 }
@@ -118,7 +118,7 @@ div.auth-google {
 }
 
 input:hover {
-    border:  2pt solid rgb(200, 130, 0);
+    border:  1.5pt solid rgb(200, 130, 0);
 }
 input::placeholder{
     color: rgb(156, 156, 156)
@@ -262,6 +262,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
