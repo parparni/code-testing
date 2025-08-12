@@ -69,12 +69,11 @@ input {
     transition: all 10ms ease;
     cursor: text;
     background: transparent;
-    font-size: 17px;
-    border: 0
+    font-size: 18pt;
+    border: none
 }
 
-input:focus {
-    outline: none;
+input:focus { 
     outline: 1.5pt solid rgb(200, 130, 0);
     box-shadow: none;
 }
@@ -262,6 +261,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
