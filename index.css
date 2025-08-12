@@ -70,7 +70,8 @@ input {
     cursor: text;
     background: transparent;
     font-size: 18pt;
-    border: none
+    border: none;
+    user-select: none
 }
 
 input:focus { 
@@ -261,6 +262,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
