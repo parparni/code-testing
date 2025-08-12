@@ -69,7 +69,8 @@ input {
     transition: all 10ms ease;
     cursor: text;
     background: transparent;
-    font-size: 17px
+    font-size: 17px;
+    border: 0
 }
 
 input:focus {
@@ -261,6 +262,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
