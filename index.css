@@ -62,23 +62,24 @@ form {
 
 input {
     display: block;
-    padding: 10pt;
-    border: 1.5pt solid rgb(211, 211, 211);
+    padding: 13pt 10pt;
+    outline: 1pt solid rgb(211, 211, 211);
     border-radius: 5pt;
     margin-bottom: 5pt;
     transition: all 10ms ease;
     cursor: text;
-    outline: none;
     background: transparent;
     font-size: 17px
 }
 
 input:focus {
     outline: none;
-    border: 1.5pt solid rgb(200, 130, 0);
+    outline: 1.5pt solid rgb(200, 130, 0);
     box-shadow: none;
-    background-color: white
 }
+input:hover{
+background-color: white;
+}     
 
 label {
     display: block;
@@ -260,6 +261,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
