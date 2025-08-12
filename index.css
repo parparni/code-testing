@@ -252,14 +252,9 @@ small {
 
     button {
         align-self: flex-end;
-    } 
-.position{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    transform: translate(0, -50%)
+    }
 }
-}
+
 
 
 
