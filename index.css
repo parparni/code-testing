@@ -60,7 +60,7 @@ form {
     position: relative;
 }
 
-input[type=text],
+input[type=email],
 input[type=password] {
   display: block;
   padding: 13pt 10pt;
@@ -269,6 +269,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
