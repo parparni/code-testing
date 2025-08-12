@@ -61,27 +61,32 @@ form {
 }
 
 input {
-    display: block;
-    padding: 13pt 10pt;
-    outline: 1pt solid rgb(211, 211, 211);
-    border-radius: 5pt;
-    margin-bottom: 5pt;
-    transition: all 10ms ease;
-    cursor: text;
-    background: transparent;
-    font-size: 18pt;
-    border: none;
-    user-select: none
+  display: block;
+  padding: 13pt 10pt;
+  width: 100%;  
+  border-radius: 5pt;
+  margin-top: 3pt;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+  outline: 1pt solid rgb(217, 217, 217);
+  border: none;
+  transition: all 10ms ease-in-out;
+  height: max-content;
 }
 
-input:focus { 
-    outline: 1.5pt solid rgb(200, 130, 0);
-    box-shadow: none;
+input:focus {
+  transition: all 50ms ease-in-out;
+  outline: 1.5pt solid brown;
+}
+
+input::placeholder:focus {
+  opacity: .5;
 }
 input:hover{
-background-color: white;
-}     
-
+  background-color: white;
+}
 label {
     display: block;
     margin-bottom: 5pt;
@@ -262,6 +267,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
