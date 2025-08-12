@@ -254,14 +254,7 @@ small {
 
     button {
         align-self: flex-end;
-    }
-
-    input {
-        box-shadow: none;
-        padding: 13pt 10pt;
-     
-    }
-
+    } 
 .position{
     position: fixed;
     bottom: 0;
@@ -269,6 +262,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
