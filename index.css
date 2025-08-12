@@ -256,7 +256,7 @@ small {
 
     input {
         box-shadow: none;
-        padding: 13pt;
+        padding: 13pt 10pt;
      
     }
 
@@ -267,6 +267,7 @@ small {
     transform: translate(0, -50%)
 }
 }
+
 
 
 
