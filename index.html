@@ -1,313 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    *::before,
-    *,
-    *::after {
-      margin: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 
-    body {
-      margin: 0;
-      background-color: #fffff5;
-      position: relative;
-    }
-
-    .overlay {
-      background-color: transparent;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 3rem;
-      color: rgb(103, 17, 17);
-      font-family: serif;
-      font-size: xx-large;
-    }
-
-    .label {
-      font-weight: 600;
-      font-size: medium;
-      color: black;
-      display: block;
-      margin-bottom: 5pt;
-    }
-
-    
-
-    input {
-      display: block;
-      padding: 15pt 10pt;
-      width: 100%;
-      margin-top: 3pt;
-      margin-bottom: 0.5rem;
-      font-size: 18px;
-      font-weight: 500;
-      background-color: transparent;
-      border: 1pt solid rgb(217, 217, 217);
-      border-radius: 5pt;
-      outline: none;
-      transition: all 10ms ease-in-out; 
-      height: max-content; 
-    }
-
-    input:focus {
-      transition: all 50ms ease-in-out;
-     border: 1.5pt solid brown;
-  
-    }
-
-    input::placeholder:focus {
-      opacity: .5;
-    }
-
-    input:hover {
-      background-color: white;
-    }
-
-    ::placeholder {
-      font-size: 17px;
-      color: rgb(77, 77, 77);
-    }
-
-    ::selection {
-      background-color: brown;
-      color: white;
-    }
-
-    label.checkbox {
-      position: relative;
-      padding-left: 25pt;
-      font-size: 10.5pt;
-      font-weight: 500;
-      display: block;
-      margin-top: 12pt;
-    }
-
-    #checkbox {
-      position: absolute;
-      left: 0;
-      visibility: hidden;
-    }
-
-    label.checkbox .checkmark {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 20pt;
-      width: 20pt;
-      background-color: transparent;
-      border: 1pt solid rgb(208, 208, 208);
-      border-radius: 5pt;
-      transition: background-color 0.05s ease-in-out;
-    }
-
-    label.checkbox .checkmark::after {
-      content: " ";
-      position: absolute;
-      top: 4pt;
-      left: 2pt;
-      height: 6pt;
-      width: 0;
-      border-width: 0 0 2.5pt 2.5pt;
-      border-style: solid;
-      transition: border-color 1s ease-in-out;
-      transform: rotate(-45deg);
-      display: none;
-      animation: shw-width .2s ease;
-      animation-fill-mode: forwards;
-      -webkit-animation: shw-width .2s ease;
-      -webkit-animation-fill-mode: forwards;
-      -o-animation: shw-width .2s ease;
-      -o-animation-fill-mode: forwards;
-      -moz-animation: shw-width .2s ease;
-    }
-
-    @-o-keyframes shw-width {
-      form {
-        width: 0;
-      }
-
-      to {
-        width: 12pt;
-      }
-    }
-
-    @-webkit-keyframes shw-width {
-      form {
-        width: 0;
-      }
-
-      to {
-        width: 12pt;
-      }
-    }
-
-    @keyframes shw-width {
-      form {
-        width: 0;
-      }
-
-      to {
-        width: 12pt;
-      }
-    }
-
-    label.checkbox input:checked~.checkmark {
-      background-color: rgb(103, 17, 17);
-      border: 1.5pt solid rgb(103, 17, 17);
-    }
-
-    label.checkbox input:checked~.checkmark::after {
-      border-color: white;
-      display: block;
-    }
-
-    button {
-      display: block;
-      padding: 10pt;
-      border-radius: 50rem;
-      width: 100%;
-      margin-top: 3rem;
-      background-color: rgb(103, 17, 17);
-      border: 0;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      font-size: medium;
-      text-shadow: 2pt 1pt 5pt rgba(58, 57, 57, 0.518);
-      box-shadow: 0 0 5pt 0 rgba(119, 119, 119, 0.246);
-      letter-spacing: .5pt;
-      transition: all 10ms ease-in-out;
-      width: 100%;
-    }
-
-    button:active {
-      transform: scale(0.99);
-    }
-
-    button:hover,
-    input[type="email"]:hover,
-    input[type="password"]:hover {
-      opacity: 0.85;
-    }
-
-    div.form-container {
-      width: 100%;
-      box-shadow: 0 0 3pt 0 rgba(160, 160, 160, 0.561);
-      padding: 0 15pt;
-      background-color: transparent;
-      z-index: 11;
-      position: relative;
-      user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 30pt 15pt;
-      box-shadow: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
-      margin: auto;
-      border-radius: 5pt;
-      margin: top 1rem;
-      z-index: 1;
-      position: relative;
-    }
-
-
-    .vlDivider {
-      position: absolute;
-      top: 15pt;
-      bottom: 15pt;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 1pt;
-      background-color: rgba(167, 167, 167, 0.409);
-      border-radius: 50rem;
-      display: none;
-
-    }
-
-    .vlDivider .innerText {
-      display: block;
-      height: 2.5rem;
-      width: 2.5rem;
-      border-radius: 50%;
-      border: 1pt solid rgba(167, 167, 167, 0.409);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(102, 102, 102, 0.729);
-      background-color: #fffff5;
-      position: absolute;
-      top: 50%;
-      left: -15pt;
-      transform: translateY(-50%);
-    }
-
-    .closeForm {
-      position: absolute;
-      top: 5pt;
-      right: 5pt;
-      padding: 0 8pt;
-      border-radius: 50%;
-      font-size: 2.5rem;
-      background: rgba(234, 234, 234, 0.471);
-      border: 1pt solid rgba(244, 244, 244, 0.471);
-      cursor: pointer;
-    }
-
-    .closeForm:hover {
-      background-color: rgb(241, 241, 241);
-    }
-
-    .closeForm:active {
-      background-color: rgb(225, 225, 225);
-
-    }
-  </style>
 </head>
 
 <body>
-  <div class='overlay'>
-    <div class='form-container'>
-      <span class='closeForm'>&times;</span>
-      <div class='col'>
-        <form action="" method='post' onSubmit={handleSubmit}>
-          <h2 class='form-title'>Log In</h2>
-          <label class="label" for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="name@domain.com" autoFocus="true" />
-          <label class="label" for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="Enter pass$#1word$" />
-          <label class='checkbox'>
-            <input type="checkbox" name="checkbox" id="checkbox" onClick={shwPassword} />
-            <span class='checkmark'></span>
-            Show password
-          </label>
-          <button type="submit">Log In</button>
+    <div id="logo-container"><strong><span class="d">D</span>harv<span class="a">a</span>k</strong></div>
+    <div class="container">
+        <form action="" method="post">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" name="email" id="email" placeholder="name@domain.com">
+            <label for="password"><b>Password:</b></label>
+            <input type="password" name="password" id="password" placeholder="kmv**********bvs$#&">
+            <div class="show-psswrd"><input type="checkbox" name="" id=""> <span>Show Password</span></div>
+            <div class="auth-divider"><b>Or</b></div>
+            <div class="auth-google"><a href="">Continue with Google</a></div>
+            <button type="submit">Log In</button>
+            <div class="terms-container"><input type="checkbox" checked="checked" name="" id=""> By signing in
+                you consent to our <strong><a href="">Terms</a> </strong> and
+                <strong> <a href="">Policies</a> </strong>
+            </div>
+            <small>Copyright &copy; Dharvak.inc</small>
         </form>
-      </div>
     </div>
-  </div>
-</body>
+
+    <footer></footer>
 
 </html>
