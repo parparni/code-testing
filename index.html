@@ -17,8 +17,7 @@
     body {
       margin: 0;
       background-color: #fffff5;
-      position: relative;
-
+      position: relative; 
     }
 
     .overlay {
@@ -37,10 +36,10 @@
 
     h2 {
       text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       color: rgb(103, 17, 17);
       font-family: serif;
-      font-size: xx-large;
+      font-size: xx-large; 
     }
 
     .label {
@@ -186,11 +185,9 @@
     }
 
     div.form-container {
-      width: 100%;
-      max-width: 50rem;
-      border-radius: 5pt;
+      width: 100%;  
       box-shadow: 0 0 3pt 0 rgba(160, 160, 160, 0.561);
-      padding: 0;
+      padding: 0 15pt;
       background-color: transparent;
       z-index: 11;
       position: relative;
@@ -200,10 +197,7 @@
       height: 100%;
     }
 
-    .col {
-      padding: 20pt;
-    }
-
+   
     .vlDivider {
       position: absolute;
       top: 15pt;
@@ -260,11 +254,7 @@
 <body>
   <div class='overlay'>
     <div class='form-container'>
-      <span class='closeForm'>&times;</span>
-      <div class='vlDivider'>
-        <span class='innerText'>Or</span>
-      </div>
-      <div class='col'></div>
+      <span class='closeForm'>&times;</span> 
       <div class='col'>
         <form action="" method='post' onSubmit={handleSubmit}>
           <h2 class='form-title'>Log In</h2>
