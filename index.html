@@ -17,7 +17,7 @@
     body {
       margin: 0;
       background-color: #fffff5;
-      position: relative; 
+      position: relative;
     }
 
     .overlay {
@@ -39,7 +39,7 @@
       margin-bottom: 3rem;
       color: rgb(103, 17, 17);
       font-family: serif;
-      font-size: xx-large; 
+      font-size: xx-large;
     }
 
     .label {
@@ -63,12 +63,12 @@
       font-size: 18px;
       font-weight: 500;
       background-color: transparent;
-      outline: 1.5pt solid rgb(217, 217, 217); 
+      outline: 1.5pt solid rgb(217, 217, 217);
       border-radius: 5pt;
       -moz-outline-radius: 5pt;
       transition: all 10ms ease-in-out;
       border: 0;
-      height: max-content;
+      height: max-content; 
     }
 
     input:focus {
@@ -136,6 +136,31 @@
       display: none;
       animation: shw-width .2s ease;
       animation-fill-mode: forwards;
+      -webkit-animation: shw-width .2s ease;
+      -webkit-animation-fill-mode: forwards;
+      -o-animation: shw-width .2s ease;
+      -o-animation-fill-mode: forwards;
+      -moz-animation: shw-width .2s ease;
+    }
+
+    @-o-keyframes shw-width {
+      form {
+        width: 0;
+      }
+
+      to {
+        width: 12pt;
+      }
+    }
+
+    @-webkit-keyframes shw-width {
+      form {
+        width: 0;
+      }
+
+      to {
+        width: 12pt;
+      }
     }
 
     @keyframes shw-width {
@@ -160,18 +185,20 @@
 
     button {
       display: block;
-      background-color: rgb(103, 17, 17);
-      border: 1pt solid rgb(103, 17, 17);
-      color: white;
-      text-shadow: 0 0 5pt rgba(94, 94, 94, 0.524);
-      width: 100%; 
-      font-size: medium;
-      font-weight: 600;
-      border-radius: 50rem;
-      margin-top: 4rem;
-      box-shadow: 0 0 3pt 0 rgba(147, 147, 147, 0.95);
-      transition: all 10ms ease-in-out;
       padding: 10pt;
+      border-radius: 50rem;
+      width: 100%;
+      margin-top: 3rem;
+      background-color: rgb(103, 17, 17);
+      border: 0;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: medium;
+      text-shadow: 2pt 1pt 5pt rgba(58, 57, 57, 0.518);
+      box-shadow: 0 0 5pt 0 rgba(119, 119, 119, 0.246);
+      letter-spacing: .5pt;
+      transition: all 10ms ease-in-out;
     }
 
     button:active {
@@ -185,7 +212,7 @@
     }
 
     div.form-container {
-      width: 100%;  
+      width: 100%;
       box-shadow: 0 0 3pt 0 rgba(160, 160, 160, 0.561);
       padding: 0 15pt;
       background-color: transparent;
@@ -195,9 +222,19 @@
       -moz-user-select: none;
       -webkit-user-select: none;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30pt 15pt;
+      box-shadow: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
+      margin: auto;
+      border-radius: 5pt;
+      margin: top 1rem;
+      z-index: 1;
+      position: relative;
     }
 
-   
+
     .vlDivider {
       position: absolute;
       top: 15pt;
@@ -254,7 +291,7 @@
 <body>
   <div class='overlay'>
     <div class='form-container'>
-      <span class='closeForm'>&times;</span> 
+      <span class='closeForm'>&times;</span>
       <div class='col'>
         <form action="" method='post' onSubmit={handleSubmit}>
           <h2 class='form-title'>Log In</h2>
