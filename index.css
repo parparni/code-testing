@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -57,8 +58,8 @@ div#logo-container strong span.a {
 
     input {
         display: block;
-        padding: 10pt;
-        border: 2pt solid rgb(211, 211, 211);
+        padding: 13pt 10pt;
+        border: 1pt solid rgb(211, 211, 211);
         border-radius: 5pt;
         margin-bottom: 5pt;
         transition: all 10ms ease;
@@ -67,9 +68,8 @@ div#logo-container strong span.a {
         outline: none;
     }
 
-    input:focus {
-        outline: none;
-        border: 2pt solid rgb(200, 130, 0);
+    input:focus { 
+        border: 1.5pt solid rgb(200, 130, 0);
        box-shadow: none;
     }
 
@@ -110,7 +110,7 @@ div#logo-container strong span.a {
  }
     button {
         padding: 10pt;
-        border-radius: 5pt;
+        border-radius: 50rem;
         width: 100%;
         margin-top: 3rem;
         background-color: green;
