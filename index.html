@@ -22,7 +22,16 @@
 
     .overlay {
       background-color: transparent;
-     width: 100%
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     h2 {
@@ -41,9 +50,7 @@
       margin-bottom: 5pt;
     }
 
-    .label:nth-child(even) {
-      margin-top: 10pt;
-    }
+    
 
     input {
       display: block;
@@ -257,15 +264,34 @@
       transform: translateY(-50%);
     }
 
-    
+    .closeForm {
+      position: absolute;
+      top: 5pt;
+      right: 5pt;
+      padding: 0 8pt;
+      border-radius: 50%;
+      font-size: 2.5rem;
+      background: rgba(234, 234, 234, 0.471);
+      border: 1pt solid rgba(244, 244, 244, 0.471);
+      cursor: pointer;
+    }
+
+    .closeForm:hover {
+      background-color: rgb(241, 241, 241);
+    }
+
+    .closeForm:active {
+      background-color: rgb(225, 225, 225);
+
+    }
   </style>
 </head>
 
 <body>
   <div class='overlay'>
     <div class='form-container'>
-     
- 
+      <span class='closeForm'>&times;</span>
+      <div class='col'>
         <form action="" method='post' onSubmit={handleSubmit}>
           <h2 class='form-title'>Log In</h2>
           <label class="label" for="email">Email</label>
@@ -279,7 +305,7 @@
           </label>
           <button type="submit">Log In</button>
         </form>
-  
+      </div>
     </div>
   </div>
 </body>
