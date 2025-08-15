@@ -44,7 +44,7 @@ html {
 
     .cr-form-overlay form {
         height: 100%;
-        padding: 10pt 15pt;
+        padding: 20pt 15pt;
         border-radius: 0;
     }
 }
@@ -248,6 +248,7 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
 
 
