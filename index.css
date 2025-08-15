@@ -44,7 +44,7 @@ html {
 
     .cr-form-overlay form {
         height: 100%;
-        padding: 30pt 15pt;
+        padding: 10pt 15pt;
         border-radius: 0;
     }
 }
@@ -239,8 +239,8 @@ div.text-divider::after {
 
 .cr-form-overlay form div.socials a {
     display: inline-block;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50rem;
     background-color: rgb(255, 248, 236);
     display: inline-flex;
@@ -251,6 +251,7 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
 
 
