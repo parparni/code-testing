@@ -1,224 +1,248 @@
-
-*,
 *::before,
+*,
 *::after {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .1pt;
 }
 
 body {
     margin: 0;
-     background-color: rgba(241, 242, 241, 0.331);
-     position: relative;
-     width: 100%;
 }
 
-div#logo-container {
-    padding: 0 0 1rem 1rem; 
-    margin-bottom: 0;
-    border-bottom: 1pt solid rgba(185, 185, 185, 0.652);
-    border-bottom-left-radius: 5pt;
-    border-bottom-right-radius: 5pt;
-    margin-bottom: 1rem;
-    z-index: 1
-}
-div#logo-container strong {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    letter-spacing: 1pt;
-    font-size: xx-large;
-    text-shadow: 2pt 1pt 0 rgba(152, 152, 152, 0.298);
-    color: black
+body,
+html {
+    height: 100%;
 }
 
-div#logo-container strong span.d {
-    color: green;
-}
-
-div#logo-container strong span.a {
-    color: rgb(200, 130, 0);
-}
-
-
-    form {
-        width: 30rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: ;
-        background-color: white;
-        padding: 30pt 20pt;
-        box-shadow: 0 0 5pt 0 rgba(130, 128, 128, 0.561);
-        margin: auto;
-        border-radius: 5pt;
-        margin: top 1rem;;
-        z-index: 1
-    }
-
-    input {
-        display: block;
-        padding: 13pt 10pt;
-        border: 1pt solid rgb(211, 211, 211);
-        border-radius: 5pt;
-        margin-bottom: 5pt;
-        transition: all 10ms ease;
-        cursor: text;
-        box-shadow: inset 0 0 5pt 0 rgba(191, 191, 191, 0.153);
-        outline: none;
-        font-size: 18px
-    }
-
-    input:focus { 
-        border: 1.5pt solid rgb(200, 130, 0);
-       box-shadow: none;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 5pt;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-    }
-
-    div.auth-google {
-        width: 100%;
-        background: rgb(255, 249, 239);
-        box-shadow: 0 0 3pt 0 rgba(128, 128, 128, 0.957);
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        padding: 8pt 3pt;
-        border-radius: 50rem;
-        text-align: center;
-        margin-top: 1rem;
-        border: 1pt solid white;
-        transition: all 10ms ease;
-    }
-
-    div.auth-google a {
-        color: black;
-        text-decoration-line: inherit;
-        opacity: 0.8;
-    }
-
-    div.auth-google:hover {
-        box-shadow: 0 0 5pt 0 rgba(127, 127, 127, 0.787);
-    }
- input[type=checkbox],button,div.auth-google{
-    cursor: pointer;
- } input:hover{
-    outline: 2pt solid rgb(217, 144, 7);
- }
-    button {
-        padding: 10pt;
-        border-radius: 50rem;
-        width: 100%;
-        margin-top: 3rem;
-        background-color: green;
-        border: 0;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: medium;
-        text-shadow: 2pt 1pt 5pt rgba(58, 57, 57, 0.518);
-        box-shadow: 0 0 5pt 0 rgba(119, 119, 119, 0.246);
-        letter-spacing: .5pt;
-        transition: all 10ms ease;
-    }
-
-    button:hover {
-        opacity: 0.92;
-    }
-
-
-div.auth-divider {
-    width: 100%;
+.cr-form-overlay {
+    background-color: rgba(50, 64, 50, 0.692);
+    height: 100%;
     display: flex;
     align-items: center;
-    margin-top: 1rem;
-    color: rgba(154, 154, 154, 0.794);
+    justify-content: center;
+    user-select: none;
+    overflow-y: auto;
 }
 
-div.auth-divider::before,
-div.auth-divider::after {
-    content: '';
-    flex: 1;
-    background: rgba(154, 154, 154, 0.794);
-    padding: .3pt;
-
+.cr-form-overlay form {
+    background-color: rgba(255, 255, 255, 0.953);
+    padding: 20pt 30pt;
+    max-width: 30rem;
+    margin: auto;
+    width: 100%;
+    border-radius: 5pt;
+    position: relative;
 }
 
-div.terms-container {
-    display: flex;
-    margin-top: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11pt;
-    color: black;
+@media screen and (max-width: 600px) {
+    .cr-form-overlay {
+        display: block;
+    }
+
+    .cr-form-overlay form {
+        height: 100%;
+        padding: 20pt 15pt;
+        border-radius: 0;
+    }
+}
+
+.cr-form-overlay form .close-form {
+    position: absolute;
+    right: 5pt;
+    top: 5pt;
+    background-color: rgb(216, 216, 216);
+    padding: 3pt 10pt;
+    border-radius: 50rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    transition: all 10ms ease-in-out;
+    width: auto;
+    cursor: pointer;
+}
+
+.cr-form-overlay form .close-form:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.cr-form-overlay form label {
+    display: block;
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: 5pt;
+    margin-top: 15pt;
+}
+
+.cr-form-overlay form input {
+    width: 100%;
+    padding: 12pt 7pt;
+    background-color: transparent;
+    border: 0;
+    outline: 1pt solid rgba(107, 107, 107, 0.467);
+    border-radius: 5pt;
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+}
+
+.cr-form-overlay form input:focus {
+    outline: 2pt solid green;
+    background-color: white;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
     opacity: 0.5;
 }
 
-div.terms-container a{
-    color: rgb(161, 105, 0);
-    cursor: pointer;
-}div.terms-container a:hover{
-    color: green;
-}
-div.show-psswrd{
-    display: flex;
-    margin-top: 5pt;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 11pt;
-    height: max-content;
-    align-items: center;
-} footer{
-    height: 4rem;
-    background: rgba(189, 189, 189, 0.398);
-    margin-top: 5rem;
-    box-shadow: 0 0 2px 0 rgba(147, 147, 147, 0.885);
-    border-top-left-radius: 5pt;
-    border-top-right-radius: 5pt;
-} small{
-    font-family: sans-serif;
-    font-weight: 500;
-    color: black;
-    opacity: .4;
+
+.cr-form-overlay form button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 8pt;
+    border-radius: 50rem;
+    border: 0;
+    background-color: green;
+     box-shadow: 0 0 3pt 0 rgba(137, 137, 137, 0.679);
     text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 10ms ease;
+    transform-style: preserve-3d;
+    outline: none;
+    cursor: pointer;
+}
+
+.cr-form-overlay form button:hover {
+    opacity: 0.9;
+}
+
+.cr-form-overlay form button:active {
+    transform: scale(0.98);
+}
+
+.bottom-container {
     margin-top: 1rem;
 }
-@media screen and (max-width: 500px) {
-    div#logo-container{
-        border-bottom: 0;
-        padding: 5pt;
-    } div#logo-container strong{
-        font-size: x-large;
-        font-weight: 500;
-        text-shadow: 1pt .5pt 0 rgba(152, 152, 152, 0.298);
-        letter-spacing: .1pt;
+
+.bottom-container label {
+    position: relative;
+    padding-left: 25pt;
+    font-size: small !important;
+    font-weight: 500 !important;
+}
+
+.bottom-container label input {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.bottom-container label input:checked+.checkmark {
+    background-color: green;
+    border: 2pt solid green;
+}
+
+.bottom-container label input:checked+.checkmark::after {
+    display: block;
+}
+
+.bottom-container label .checkmark {
+    height: 17pt;
+    width: 17pt;
+    border-radius: 5pt;
+    border: 2pt solid rgba(107, 107, 107, 0.467);
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.bottom-container label .checkmark::after {
+    content: " ";
+    position: absolute;
+    height: 5.5pt;
+    width: 10pt;
+    transform: rotate(-45deg);
+    top: 2.5pt;
+    left: 2pt;
+    border-width: 0 0pt 2pt 2pt;
+    border-style: solid;
+    display: none;
+    border-color: white;
+    animation: checkmark-animation 100ms ease-in-out;
+    -webkit-animation: checkmark-animation 100ms ease-in-out;
+}
+
+@keyframes checkmark-animation {
+    from {
+        width: 0;
     }
-    form{
-        width: 100%;
-        background-color: transparent;
-        box-shadow: inherit;
-    }
-    footer{
-        background-color: transparent;
-        box-shadow: inherit;
-        position: absolute;
-        bottom: 0;
-    } button{
-        align-self: flex-end;
-    }
-    input{
-        box-shadow: none;
-        padding: 10pt;
-        border: 1pt solid rgb(211, 211, 211);
-    } input:focus{
-        border: 1pt solid rgb(172, 115, 9);
-        outline: none;
-    }
-    input:hover{
-        outline: 1pt solid rgb(217, 144, 7);
+
+    to {
+        width: 10pt;
     }
 }
 
+@-webkit-keyframes checkmark-animation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10pt;
+    }
+}
+
+a {
+    color: green;
+    text-decoration-line: underline;
+    opacity: 0.7;
+    transition: all 10ms ease-in-out;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+div.text-divider {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: medium;
+    font-size: medium;
+    margin-top: 2rem;
+    color: rgba(0, 54, 0, 0.774);
+    letter-spacing: 0;
+}
+
+div.text-divider::before,
+div.text-divider::after {
+    content: "";
+    flex: 1;
+    height: 1pt;
+    background-color: rgba(107, 107, 107, 0.467);
+    margin: 5pt;
+    border-radius: 50rem;
+}
+
+.cr-form-overlay form div.socials {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cr-form-overlay form div.socials a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50rem;
+    background-color: rgb(255, 248, 236);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1pt 0 rgba(0, 0, 0, 0.748);
+    color: black;
+    text-decoration: none; 
+    border:  1pt solid rgba(107, 107, 107, 0.467);
+}
