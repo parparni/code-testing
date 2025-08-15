@@ -2,13 +2,14 @@
 *,
 *::after {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .1pt;
 }
 
 body {
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.953);
 }
 
 body,
@@ -78,15 +79,18 @@ html {
     width: 100%;
     padding: 12pt 7pt;
     background-color: transparent;
-    border: 0;
-    outline: 1pt solid rgba(107, 107, 107, 0.467);
+    outline: 0;
+    border: 1pt solid rgba(107, 107, 107, 0.467);
     border-radius: 5pt;
     font-size: 18px;
     transition: all 100ms ease-in-out;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .cr-form-overlay form input:focus {
-    outline: 2pt solid green;
+    border: 2pt solid green;
     background-color: white;
 }
 
@@ -247,4 +251,3 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
-
