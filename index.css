@@ -37,7 +37,7 @@ html {
     position: relative;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 380px) {
     .cr-form-overlay {
         display: block;
     }
@@ -251,3 +251,4 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
