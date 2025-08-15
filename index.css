@@ -239,8 +239,8 @@ div.text-divider::after {
 
 .cr-form-overlay form div.socials a {
     display: inline-block;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50rem;
     background-color: rgb(255, 248, 236);
     display: inline-flex;
@@ -251,4 +251,5 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
