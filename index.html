@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,30 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-
+    <link rel="stylesheet" href="../../public/styles/subscribe.css">
+    <style>
+        #logo{
+            position: absolute;
+            top: 10pt;
+            left: 10pt;
+            color: rgb(0, 47, 0);
+            font-size: large;
+            font-style: italic;
+            font-family: fantasy;
+        } #logo strong::after{
+            content: "";
+            height: 6pt;
+            width: 6pt;
+            border-radius: 50%;
+            background-color: green;
+            position: absolute;
+            top: 2.5pt;
+            right: -8pt;
+        }
+    </style> 
 </head>
 
 <body>
-    <div id="logo-container"><strong><span class="d">D</span>harv<span class="a">a</span>k</strong></div>
-    <div class="container">
-        <form action="" method="post">
-            <label for="email"><b>Email:</b></label>
-            <input type="email" name="email" id="email" placeholder="name@domain.com">
-            <label for="password"><b>Password:</b></label>
-            <input type="password" name="password" id="password" placeholder="kmv**********bvs$#&">
-            <div class="show-psswrd"><input type="checkbox" name="" id=""> <span>Show Password</span></div>
-            <div class="auth-divider"><b>Or</b></div>
-            <div class="auth-google"><a href="">Continue with Google</a></div>
-            <button type="submit">Log In</button>
-            <div class="terms-container"><input type="checkbox" checked="checked" name="" id=""> By signing in
-                you consent to our <strong><a href="">Terms</a> </strong> and
-                <strong> <a href="">Policies</a> </strong>
+    <div class="cr-form-overlay">
+        <form action="" method="post" onsubmit="return validate()" draggable="false"> 
+            <div id="logo"><strong>CurrentNews</strong></div>
+            <span class="close-form" title="Close form">&times;</span>
+            <div class="top-container">
+                <h2 style="color: rgba(0, 29, 0, 0.6); margin: 4rem 0 2rem 0;">Subscribe to our <span
+                        style="color: rgb(195, 129, 7);"> Ads free</span> website for more intriguing news!</h2>
             </div>
-            <small>Copyright &copy; Dharvak.inc</small>
+            <label for="">Email</label>
+            <input type="Email" name="cr-user-email" id="cr-user-email" spellcheck="false" autofocus
+                placeholder="name@domain.com">
+            <button type="submit">Subscribe</button>
+            <div class="bottom-container">
+                <label><input type="checkbox" name="subscribe" id="checkbox" checked>
+                    <span class="checkmark"></span>
+                    <span style="opacity: 0.8;"> By subscribing to currentNews you agree to our <a
+                            href="">Terms of use</a> and <a href="">Privacy policy</a>.</span>
+                </label>
+            </div>
+            <div class="text-divider">Follow us on</div>
+            <div class="socials"><a href="">F</a> <a href="">T</a> <a href="">I</a></div>
         </form>
     </div>
 
-    <footer></footer>
+    <script>
+        function validate() {
+            var email = document.getElementById("cr-user-email").value;
+            if(email === "" || email === null) {
+                alert("Email must not be empty!");
+                return false
+            }
+        }
+    </script>
+</body>
 
 </html>
