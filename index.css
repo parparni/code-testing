@@ -83,10 +83,7 @@ html {
     border: 1pt solid rgba(107, 107, 107, 0.467);
     border-radius: 5pt;
     font-size: 18px;
-    transition: all 100ms ease-in-out;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    transition: all 10ms ease-in-out; 
 }
 
 .cr-form-overlay form input:focus {
@@ -239,8 +236,8 @@ div.text-divider::after {
 
 .cr-form-overlay form div.socials a {
     display: inline-block;
-    height: 5rem;
-    width: 5rem;
+    height:  5rem;
+    width:  5rem;
     border-radius: 50rem;
     background-color: rgb(255, 248, 236);
     display: inline-flex;
@@ -251,12 +248,3 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
-
-
-
-
-
-
-
-
-
