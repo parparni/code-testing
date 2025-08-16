@@ -19,6 +19,7 @@ body {
     justify-content: center;
     user-select: none;
     overflow-y: auto;
+    scroll-behavior: smooth;
     position: fixed;
     top: 0;
     left: 0;
@@ -249,6 +250,7 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
 
 
