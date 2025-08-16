@@ -43,8 +43,8 @@ body {
     }
 
     .cr-form-overlay form {
-         height: 100vh;
-        padding:  0 15pt;
+         height: 100%;
+        padding:  5pt 15pt;
         border-radius: 0;
         position: fixed;
         top: 0;
@@ -255,6 +255,7 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
 
 
