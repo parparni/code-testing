@@ -53,6 +53,7 @@ html {
         left: 0;
         right: 0;
         bottom: 0;
+         overflow-y: auto;
     }
 }
 
@@ -256,6 +257,7 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
 
 
