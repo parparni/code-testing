@@ -10,6 +10,7 @@
 
 body {
     margin: 0;
+    background-color: rgba(255, 255, 255, 0.953);
 }
 
 body,
@@ -255,6 +256,7 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
 
 
