@@ -20,6 +20,7 @@ body {
     user-select: none;
     overflow-y: auto;
     scroll-behavior: smooth;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
