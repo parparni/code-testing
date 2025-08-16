@@ -11,21 +11,19 @@
 body {
     margin: 0;
     background-color: rgba(255, 255, 255, 0.953);
-}
-
-body,
-html {
-    height: 100%;
-}
-
+} 
 .cr-form-overlay {
-    background-color: rgba(50, 64, 50, 0.692);
-    height: 100%;
+   background-color: rgba(50, 64, 50, 0.692); 
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
     overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .cr-form-overlay form {
@@ -257,6 +255,7 @@ div.text-divider::after {
     text-decoration: none; 
     border:  1pt solid rgba(107, 107, 107, 0.467);
 }
+
 
 
 
